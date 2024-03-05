@@ -1,0 +1,512 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+body {
+    margin: 0;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    overflow-x: hidden;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1245px;
+    margin: 0 auto;
+}
+:root {
+    --accent-color: #2f2e2e;;
+}
+/* font-family: "Playfair Display", serif;
+font-family: "Barlow", sans-serif;
+font-family: "Inter", sans-serif; */
+
+/* НАВИГАЦИОННОЕ МЕНЮ */
+
+.header {
+    padding-top: 65px;
+}
+.header__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0; 
+    padding: 0;
+}
+.menu li a {
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    color: #2f2e2e;
+}
+.menu li a:hover {
+    color: #000;
+    opacity: 0.8;
+}
+.menu :not(:last-child) {
+    margin-right: 95px;
+}
+.clearfix {
+}
+
+/* БУРГЕР МЕНЮ */
+
+.header__burger {
+    display: none;
+}
+.header__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.burger__logo {
+    width: 180px;
+    height: 35px;
+}
+.burger {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    padding: 0;
+    background-color: var(--accent-color);
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.burger__line {
+    display: block;
+    width: 21px;
+    height: 3px;
+    background-color: #fff;
+    margin-bottom: 4px;
+}
+.burger__line:last-child {
+    margin-bottom: 0;
+}
+.sidenav li a{
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+}
+.sidenav li a:hover {
+    color: #000;
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 1300px) {
+    .header__burger {
+        display: flex;
+        padding-top: 40px;
+    }
+    .header {
+        display: none;
+    }
+    .burger:hover {
+        background-color: #808080;
+    }
+}
+
+/* ШАПКА */
+
+.head__info {
+    position: absolute;
+    width: 691px;
+    height: 550px;
+    background-color: #fff;
+    opacity: 0.8;
+    top: 285px;
+    left: 255px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.head__h2 {
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    font-size: 51px;
+    color: #2f2e2e;
+    max-width: 425px;
+    margin-right: 70px;
+}
+.head__p {
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    font-size: 32px;
+    color: #2f2e2e;
+    max-width: 436px;
+    padding-top: 9px;
+    margin-right: 60px;
+}
+.head__img-block {
+    display: flex;
+    padding-top: 91px;
+    justify-content: flex-end;
+    padding-right: 252px;
+}
+
+/* OUR SERVICES */
+
+.services {
+    background: rgba(37, 77, 77, 0.2);
+    height: 384px;
+}
+.services__h5 {
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    font-size: 27px;
+    text-align: center;
+    color: #2f2e2e;
+    padding-top: 15px;
+}
+.services__flex {
+
+}
+.container__services {
+    max-width: 1087px;
+    margin: 0 auto;
+}
+.services__card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.services__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.services__img {
+    padding-top: 55px;
+    width: 103px;
+}
+.services__h2 {
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    font-size: 51px;
+    text-align: center;
+    color: #2f2e2e;
+    padding-top: 16px;
+}
+.services__p {
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #2f2e2e;
+    max-width: 158px;
+}
+
+/* ABOUT US */
+
+.about {
+}
+.about__img {
+    padding-top: 75px;
+}
+.about__flex {
+    display: flex;
+    justify-content: space-between;
+}
+.about__info {
+    padding-top: 150px;
+    padding-left: 100px;
+}
+.about__h3 {
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    font-size: 51px;
+    color: #2f2e2e;
+}
+.about__p {
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-size: 31px;
+    color: #2f2e2e;
+    max-width: 456px;
+    padding-top: 27px;
+    margin-bottom: 36px;
+}
+.about__link {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #2f2e2e;
+}
+
+/* Our Projects */
+
+.projects {
+    padding-top: 95px;
+}
+.projects__h3 {
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    font-size: 51px;
+    color: #2f2e2e;
+}
+.projects__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    justify-items: center;
+    padding-top: 71px;
+    gap: 104px;
+}
+.projects__item {
+    
+}
+.projects__img {
+
+}
+.projects__p {
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    max-width: 179px;
+    font-size: 18px;
+    text-align: center;
+    color: #2f2e2e;
+    margin: 0 auto;
+    padding-top: 13px;
+}
+
+/* Testimonial */
+
+.testimonial {
+    padding-bottom: 150px;
+}
+.container__testimonial {
+    max-width: 1153px;
+    margin: 0 auto;
+}
+.testimonial__h3 {
+    font-family: "Playfair Display", serif;
+    padding-top: 90px;
+    font-weight: 900;
+    font-size: 51px;
+    text-align: center;
+    margin-bottom: 91px;
+    color: #000;
+}
+.testimonial__flex {
+    display: flex;
+    justify-content: space-between;
+}
+.testimonial__one {
+    display: flex;
+    align-items: center;
+}
+.testimonial__img {
+    margin-right: 29px;
+}
+.testimonial__p {
+    max-width: 307px;
+}
+
+/* Подвал */
+
+.footer {
+    height: 369px;
+    background: var(--accent-color);
+    padding-top: 57px;
+}
+.footer__flex {
+    display: flex;
+    justify-content: space-between;
+}
+.footer__item {
+}
+.footer__h5-logo {
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-size: 42px;
+    color: #fafafa;
+}
+.footer__h5 {
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    color: #fafafa;
+}
+.footer__p-one {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 171%;
+    color: #fafafa;
+    max-width: 287px;
+    padding-top: 7px;
+    margin-bottom: 47px;
+}
+.footer__p-two {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 171%;
+    color: #fafafa;
+    max-width: 201px;
+    padding-top: 17px;
+}
+.footer__item-two {
+    /* padding-right: 400px; */
+}
+.footer__icons {
+    display: flex;
+    justify-content: space-between;
+    max-width: 120px;
+}
+.fa {
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+}
+.fa:hover {
+    opacity: 0.8;
+}
+.location {
+    max-width: 395px;
+    padding-top: 18px;
+    max-height: 270px;
+}
+
+/* МОБИЛЬНАЯ ВЕРСИЯ */
+
+@media only screen and (max-width: 1300px) {
+    .head__info {
+        display: none;
+    }
+    .about__logo {
+        min-width: 600px;
+    }
+    .about__flex {
+        display: grid;
+    }
+    .about__info {
+        text-align: center;
+        padding-left: 0;
+    }
+    .about__p {
+        max-width: 100%;
+    }
+    .footer {
+        height: 680px;
+    }
+    .footer__flex {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer__h5 {
+        padding-top: 30px;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .head__img {
+        /* Дом */
+    }
+    .services {
+        padding: 15px;
+    }
+    .about__logo {
+        min-width: 300px;
+    }
+    .projects__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .testimonial__flex {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .head__img {
+        display: none;
+    }
+    .head {
+        background-image: url(../img/Header.png);
+        padding-bottom: 645px;
+        margin: 0 auto;
+    }
+    .header__burger {
+        margin-bottom: 15px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .footer {
+        height: 900px;
+    }
+    .footer__flex {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer__h5 {
+        padding-top: 30px;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .services__card {
+        display: grid;
+        justify-content: center;
+    }
+    .head {
+        margin-bottom: 20px;
+    }
+    .services {
+        height: 900px;
+    }
+    .services__p {
+        max-width: 100%;
+        font-size: 20px;
+        padding-top: 10px;
+    }
+    .projects__grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .projects__p {
+        font-size: 30px;
+        max-width: 100%;
+    }
+    .testimonial__one {
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 15px;
+    }
+    .testimonial__p {
+        padding-top: 15px;
+    }
+    .testimonial__info {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .location {
+        max-width: 350px;
+    }
+    .sidenav {
+        width: 240px;
+    }
+}
+@media only screen and (max-width: 390px) {
+    .services {
+        height: 1000px;
+    }
+    .location {
+        max-width: 310px;
+    }
+}
